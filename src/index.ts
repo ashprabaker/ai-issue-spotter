@@ -48,27 +48,16 @@ const logger = {
  * Display an ASCII art logo
  */
 function displayLogo(): void {
-  // Define console colors for a cool effect
-  const reset = "\x1b[0m";
-  const cyan = "\x1b[36m";
-  const magenta = "\x1b[35m";
-  const yellow = "\x1b[33m";
-
   console.log(); // Empty line for spacing
-  console.log(`${cyan}    █████  ██      ██  ███████  ███████ ██    ██ ███████      ${reset}`);
-  console.log(`${cyan}   ██   ██ ██      ██ ██     ██ ██      ██    ██ ██          ${reset}`);
-  console.log(`${cyan}   ███████ ██      ██ ██     ██ ███████ ██    ██ █████       ${reset}`);
-  console.log(`${cyan}   ██   ██ ██      ██ ██     ██      ██ ██    ██ ██          ${reset}`);
-  console.log(`${cyan}   ██   ██ ██████  ██  ███████  ███████  ██████  ███████     ${reset}`);
+  console.log(`     _    ___   _                                      _   _            `);
+  console.log(`    / \\  |_ _| (_)___ ___ _   _  ___   ___ _ __   ___ | |_| |_ ___ _ __ `);
+  console.log(`   / _ \\  | |  | / __/ __| | | |/ _ \\ / __| '_ \\ / _ \\| __| __/ _ \\ '__|`);
+  console.log(`  / ___ \\ | |  | \\__ \\__ \\ |_| |  __/ \\__ \\ |_) | (_) | |_| ||  __/ |   `);
+  console.log(` /_/   \\_\\___| |_|___/___/\\__,_|\\___| |___/ .__/ \\___/ \\__|\\__\\___|_|   `);
+  console.log(`                                          |_|                           `);
   console.log();
-  console.log(`${magenta} ███████ ██████   ██████  ████████ ████████ ███████ ██████  ${reset}`);
-  console.log(`${magenta} ██      ██   ██ ██    ██    ██       ██    ██      ██   ██ ${reset}`);
-  console.log(`${magenta} ███████ ██████  ██    ██    ██       ██    █████   ██████  ${reset}`);
-  console.log(`${magenta}      ██ ██      ██    ██    ██       ██    ██      ██   ██ ${reset}`);
-  console.log(`${magenta} ███████ ██       ██████     ██       ██    ███████ ██   ██ ${reset}`);
-  console.log();
-  console.log(`${yellow}        👁️  Automatically Detect UX Issues  👁️        ${reset}`);
-  console.log(`${yellow}        📝  Generate Actionable Tickets  📝        ${reset}`);
+  console.log(`                 👁️  Automatically Detect UX Issues  👁️                 `);
+  console.log(`                 📝  Generate Actionable Tickets  📝                 `);
   console.log();
 }
 
