@@ -45,6 +45,34 @@ const logger = {
 };
 
 /**
+ * Display an ASCII art logo
+ */
+function displayLogo(): void {
+  // Define console colors for a cool effect
+  const reset = "\x1b[0m";
+  const cyan = "\x1b[36m";
+  const magenta = "\x1b[35m";
+  const yellow = "\x1b[33m";
+
+  console.log(); // Empty line for spacing
+  console.log(`${cyan}    █████  ██      ██  ███████  ███████ ██    ██ ███████      ${reset}`);
+  console.log(`${cyan}   ██   ██ ██      ██ ██     ██ ██      ██    ██ ██          ${reset}`);
+  console.log(`${cyan}   ███████ ██      ██ ██     ██ ███████ ██    ██ █████       ${reset}`);
+  console.log(`${cyan}   ██   ██ ██      ██ ██     ██      ██ ██    ██ ██          ${reset}`);
+  console.log(`${cyan}   ██   ██ ██████  ██  ███████  ███████  ██████  ███████     ${reset}`);
+  console.log();
+  console.log(`${magenta} ███████ ██████   ██████  ████████ ████████ ███████ ██████  ${reset}`);
+  console.log(`${magenta} ██      ██   ██ ██    ██    ██       ██    ██      ██   ██ ${reset}`);
+  console.log(`${magenta} ███████ ██████  ██    ██    ██       ██    █████   ██████  ${reset}`);
+  console.log(`${magenta}      ██ ██      ██    ██    ██       ██    ██      ██   ██ ${reset}`);
+  console.log(`${magenta} ███████ ██       ██████     ██       ██    ███████ ██   ██ ${reset}`);
+  console.log();
+  console.log(`${yellow}        👁️  Automatically Detect UX Issues  👁️        ${reset}`);
+  console.log(`${yellow}        📝  Generate Actionable Tickets  📝        ${reset}`);
+  console.log();
+}
+
+/**
  * Format a date for logging
  * @param date Date to format
  * @returns Formatted date string
@@ -57,6 +85,9 @@ function formatDate(date: Date): string {
  * The main entry point of the application
  */
 async function main(): Promise<void> {
+  // Display the cool ASCII art logo
+  displayLogo();
+  
   logger.info('🔍 AI Issue Spotter starting up...');
   
   // Log configuration
